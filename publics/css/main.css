@@ -1,0 +1,609 @@
+
+*{ font-family: "Courier", Courier, monospace;   }
+
+#sitename
+{ font-size: 20px;}
+
+
+
+table
+{
+    table-layout: fixed;
+}
+
+
+
+
+
+body
+ {
+    background-color: rgb(150, 250, 240) ;
+}
+
+#regbody
+{
+  background-color: black;
+}
+
+#regh1
+{
+  color: white;
+}
+
+
+
+
+
+
+.wdw
+{ 
+    
+    text-align: right;
+    width: 50px; 
+    font-size: 12px;
+}
+
+
+.wdw1
+{ 
+    width: 150px; 
+}
+
+.wdw2,.wdw_kg,.wdw_kgm
+{ 
+    
+    text-align: right;
+    width: 55px; 
+    font-size: 15px;
+}
+.wdw5
+{ 
+    
+    text-align: right;
+    width: 80px; 
+    font-size: 15px;
+}
+
+.wdw6
+{ 
+    
+    text-align: center;
+    width: 90%; 
+    font-size: 15px;
+}
+
+
+
+
+.dsc
+{
+   
+    text-align: right;
+    font-size: 12px;
+}
+.dsc2,.M,.Q,.kg,.kgm
+{
+    
+    text-align: left;
+    font-size: 12px;
+}
+
+.it5 { grid-area: log;
+    
+    font-size: 10px;
+ } 
+
+
+
+ 
+
+
+
+#log_keys{
+
+  display: flex;
+  flex-direction: row ;
+}
+
+
+
+.dsc3
+{
+   
+    text-align: left;
+    font-size: 10px;
+    
+    
+}
+
+.dsc5
+{
+   
+    text-align: left;
+    font-size: 14px;
+    
+    
+}
+
+
+
+td
+{
+    width: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    
+}
+
+select
+{
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+}
+
+#date
+{
+font-size: 15px;
+}
+    
+    
+
+
+input
+{
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+}
+
+button
+{
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+}
+
+#convBTN,#flBTN,#lbsBTN
+{
+    position: relative;
+    padding: 0px;
+    left: 3px;
+    width: 20px;
+    text-align: center;
+    font-size: 10px;
+
+}
+
+#canvas {
+border: 1px solid #bdbdbd;
+border-radius: 5px;
+
+
+}
+
+
+.it1
+ { 
+    grid-area: header;
+
+    font-size: 15px;
+     
+    text-align: left;
+}
+
+.it2 { grid-area: menue; }
+
+.it3 { grid-area: table; }
+
+.it4 { grid-area: footer;
+       font-size: 10px;
+} 
+
+
+ select[name="fields"] {
+    width: 30%
+  }
+  input[name="values"] {
+    width: 60%
+  }
+
+
+
+.container { 
+
+
+    height: 600px;
+    width: 95%;
+
+display: grid;
+
+   grid-template-columns: [c1] 29% [c2] 31%[c3] 40% [c4];   
+   grid-template-rows:     [r1] 30% [r2] 60% [r4] 10% [r5];   
+
+
+      grid-template-areas: 
+      'header header log ' 
+      'table . .  ' 
+      'footer footer footer      '; 
+     
+     
+    gap: 1px;
+    /* background-color: #2196F3; */
+    padding: 1px;
+ }
+
+ #aBox
+ {
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+    position: absolute;
+    top: 35%;
+    left:40%; 
+     margin-left: auto;  
+     margin-right: auto;  
+}
+
+
+
+
+
+
+
+#cancelBtn{
+
+    background-color: #2196F3;
+    font-size: 12px;
+    float: right; 
+    margin: 5px;
+    color: white;   
+}
+#cancelBtn:hover {
+    color: black;
+  }
+#okBtn{
+
+    background-color: #f44336;
+    font-size: 12px;
+    margin: 5px;
+    float: right;
+    color: white; 
+}
+#okBtn:hover {
+    color: black;
+  }
+
+
+#confBox{
+
+
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    padding: auto;
+    align-items: center;
+    
+    width: 25%;
+    
+    /* background: teal; */
+    aspect-ratio: 5 / 3;
+
+    top: 30%;
+    left:30%;
+    z-index: 1;
+
+}
+  .confirm {
+
+
+    align-items: right;
+    
+    width: 80%;
+    height: 50%;
+    padding: 5%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #f44336;
+    color: white;
+  }
+
+  .discr{
+
+    width: 75%;
+    height: 50%;
+
+    position :absolute;
+    align-items: center;
+
+    top: 30%;
+    
+
+  }
+
+
+ .alert {
+
+
+    align-items: center;
+    font-size: 10px;
+    
+    width:  100%;
+    height: 100%;
+    padding: 20px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #f44336;
+    color: white;
+  }
+
+  .keys
+  {
+    position: absolute;
+    bottom: 20%;
+    right:9%; 
+  }
+
+
+.confirm.success {background-color: #04AA6D;}
+.confirm.info {background-color: #2196F3;}
+.confirm.warning {background-color: #ff9800;}
+
+
+
+.alert.success {background-color: #04AA6D;}
+.alert.info {background-color: #2196F3;}
+.alert.warning {background-color: #ff9800;}
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 15px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+
+  #confirm_text
+  {
+    word-wrap:break-word;
+     word-break: break-word;
+      font-size: 75% ;
+       text-align:center;
+        vertical-align: middle;
+         display: table-cell; 
+         /* padding-top: auto;  */
+         /* padding-bottom: auto;  */
+         position: absolute; 
+        
+  }
+
+
+  #loginbox
+ {
+
+  z-index: 1;
+  width: 20%;
+  height: 50%;
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;    
+    position: absolute;
+    top: 20%;
+    left:35%; 
+     
+}
+
+#logintable
+{
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column ;
+   flex-wrap: wrap; 
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    color: grey;
+
+}
+
+#regResTable
+{
+  height:20%;
+  width: 100%;
+  display: flex;
+   justify-content: center;  
+  flex-direction: column ;
+    flex-wrap: wrap;  
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    color: grey;
+}
+
+
+#registerbox
+{
+  z-index: 1;
+  width: 30%;
+  height: 60%;
+  display: flex;   
+  justify-content: center;
+  aspect-ratio: 5 /5;
+    position: absolute;
+    top: 20%;
+    left:35%; 
+
+}
+
+#reqbox
+{
+  z-index: 1;
+  width: 30%;
+  height: 60%;
+  display: flex;   
+  justify-content: center;
+  aspect-ratio: 5 /5;
+    position: absolute;
+    top: 20%;
+    left:35%; 
+
+}
+
+#reqtable
+{
+  height:70%;
+  width: 100%;
+  display: flex;
+   justify-content: center;  
+  flex-direction: column ;
+    flex-wrap: wrap;  
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    color: grey;
+
+}
+
+
+
+
+#regtable
+{
+  height:70%;
+  width: 100%;
+  display: flex;
+   justify-content: center;  
+  flex-direction: column ;
+    flex-wrap: wrap;  
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    color: grey;
+
+}
+
+
+
+
+
+
+
+
+/*  
+#span9
+{
+position: absolute;
+
+top: 62%;
+right: 2%;
+
+display: flex;
+justify-content: center;
+  
+  width: 100%;
+
+}*/
+
+
+#registerBtn,#resetBtn
+{
+
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+    background-color: #f44336;
+    font-size: 15px;
+    color:white;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+  
+}
+
+#registerBtn:hover {
+  color: yellow;
+}
+
+#loginBtn
+{
+
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+    background-color: blue;
+    font-size: 60%;
+    color:white;
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
+  
+}
+
+#loginBtn:hover
+{
+  color: yellow;
+}
+
+
+
+
+
+
+
+
+
+#user,#pswd,#name,#surname
+{
+    width: 95%;
+    text-align: center;
+
+}
+
+
+ #signInOut
+{
+     
+  margin: 2px;
+    /* height: 20px; */
+    font-size: 13px;
+}
+
+
+#reglink,#reslink
+{
+ 
+font-size: 13px;
+color: blue;
+
+
+}
+#reglink:hover {
+  color: greenyellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* .container > div  */
+ 
+

@@ -1,0 +1,201 @@
+
+*{ font-family: "Courier", Courier, monospace;   }
+
+#sitename
+{ font-size: 20px;}
+
+
+
+table
+{
+    table-layout: fixed;
+}
+
+
+
+
+
+body
+ {
+    background-color: rgb(150, 250, 240) ;
+}
+
+.wdw
+{ 
+    
+    text-align: right;
+    width: 35px; 
+    font-size: 15px;
+}
+
+
+.wdw1
+{ 
+    width: 150px; 
+}
+
+.wdw2,.wdw_kg,.wdw_kgm
+{ 
+    
+    text-align: right;
+    width: 55px; 
+    font-size: 15px;
+}
+
+
+.dsc
+{
+   
+    text-align: right;
+    font-size: 12px;
+}
+.dsc2,.M,.Q,.kg,.kgm
+{
+    
+    text-align: left;
+    font-size: 12px;
+}
+.dsc_login
+{
+    text-align: right;
+    font-size: 12px;
+}
+
+
+
+.dsc3
+{
+   
+    text-align: left;
+    font-size: 10px;
+    
+    
+}
+
+td
+{
+    width: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    
+}
+
+select
+{
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+}
+    
+    
+
+
+input
+{
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+}
+
+button
+{
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+}
+
+#convBtn,#flBtn,#lbsBtn
+{
+    position: relative;
+    padding: 0px;
+    left: 3px;
+    width: 20px;
+    text-align: center;
+    font-size: 10px;
+
+}
+
+#canvas {
+border: 1px solid #bdbdbd;
+border-radius: 5px;
+
+
+}
+
+
+
+.it1
+ { 
+    font-size: 15px;
+    grid-area: header; 
+    text-align: left;
+}
+
+.it2 { grid-area: menu; }
+
+.it3 { grid-area: table; }
+.it4 { grid-area: footer;
+       font-size: 10px;
+} 
+.it5 { grid-area: log;
+    
+    font-size: 10px;
+    
+
+    
+ } 
+ #user,#pswd
+{
+    width: 200px;
+    text-align: right;
+
+}
+
+ #pilotTE,#pswdTE
+ {
+    float: left; 
+    text-align: left;
+ }
+
+ #signInOut
+{
+    clear: both;
+    float: left; 
+   
+    height: 20px;
+    font-size: 11px;
+}
+
+
+
+
+
+
+ 
+.container { 
+
+
+    height: 700px;
+    width: 95%;
+
+display: grid;
+
+   grid-template-columns: [c1] 25% [c2] 25% [c3]25%[c4] 25% [c5];   
+   grid-template-rows:     [r1] 15% [r2] 10% [r3]  65% [r4] 10% [r5];   
+
+
+      grid-template-areas: 
+      'header header header log ' 
+      'table table . . ' 
+      'table table .  .' 
+      'table table .  . '
+      'footer footer . .  '; 
+     
+     
+    gap: 1px;
+    /* background-color: #2196F3; */
+    padding: 1px;
+ }
+
+
+  /* .container > div  */
+ 
+

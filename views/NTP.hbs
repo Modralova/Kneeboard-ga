@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>wind triangle</title>
+
+</head>
+
+<body>
+
+    <h1>wind traiangle</h1>
+
+    <ul id="menu">
+        <li><a href='/'>{{title}}</a></li>
+        <li><a href="LOAD.hbs">load and balance</a></li>
+    </ul>
+
+
+    
+        <table>
+
+            <tr>
+                <td>
+                    <p class="dsc">Δm</p>
+                </td>
+                <td>
+                    <p class="dsc2"><input type="numer" name="inDelM" id="inDelM" class="wdw" size="4" maxlength="4"
+                             /></p>
+                </td>
+                <td>
+                    <p class="dsc">from</p>
+                </td>
+                <td>
+                    <p class="dsc2"><input type="text" name="inFrom" id="inFrom" class="wdw" size="4" maxlength="4"
+                             /></p>
+                </td>
+
+                <td rowspan="2" colspan="2" align="center" valign="bottom"><canvas id="canvas" class="wdw.canvas" width="75px"
+                        height="75px"></canvas></td>
+              
+
+            </tr>
+
+            <tr>
+                <td>
+                    <p class="dsc">Δb</p>
+                </td>
+                <td>
+                    <p class="dsc2"><input type="text" name="inDelB" id="inDelB" class="wdw" size="4" maxlength="4"  />
+                    </p>
+                </td>
+                <td>
+                    <p class="dsc">to</p>
+                </td>
+                <td>
+                    <p class="dsc2"><input type="text" name="inTo" id="inTo" class="wdw" size="4" maxlength="4"  />
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p class="dsc">mw </p>
+                </td>
+                <td>
+                    <p class="dsc2"><input type="text" name="inDM" id="inDM" class="wdw" size="4" maxlength="4"  />
+                    </p>
+                </td>
+
+                <td>
+                    <p class="dsc">nw </p>
+                </td>
+                <td>
+                    <p class="dsc2"><input type="text" name="outDN" id="outDN" class="wdw" size="4" maxlength="4"  />
+                    </p>
+                </td>
+                <td>
+                    <p class="dsc">wd </p>
+                </td>
+                <td>
+                    <p class="dsc2"><input type="text" name="outKW" id="outKW" class="wdw" size="4" maxlength="4"  />
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p class="dsc">ws</p>
+                </td>
+                <td>
+                    <p class="dsc2"><input type="text" name="inU" id="inU" class="wdw" size="4" maxlength="4"  />kt
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+
+                <td>
+                    <p class="dsc">gc</p>
+                </td>
+                <td>
+                    <p class="dsc2"><input type="text" name="inNKDG" id="inNKDG" class="wdw" size="4" maxlength="4"
+                             /></p>
+                </td>
+
+                <td>
+                    <p class="dsc">mc</p>
+                </td>
+                <td>
+                    <p class="dsc2"><input type="text" name="outNKDM" id="outNKDM" class="wdw" size="4" maxlength="4"
+                             /></p>
+                </td>
+                <td>
+                    <p class="dsc">tc</p>
+                </td>
+                <td>
+                    <p class="dsc2"><input type="text" name="outKB" id="outKB" class="wdw" size="4" maxlength="4"  />
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p> </p>
+                </td>
+                <td>
+                    <p> </p>
+                </td>
+                {{!-- <td>
+                    <p class="dsc">KZmax</p>
+                </td> --}}
+                {{!-- <td>
+                    <p class="dsc2"><input type="text" name="KZmax" id="KZmax" class="wdw" size="4" maxlength="4"
+                             /></p>
+                </td> --}}
+                <td>
+                    <p class="dsc">da</p>
+                </td>
+                <td>
+                    <p class="dsc2"><input type="text" name="outKZ" id="outKZ" class="wdw" size="4" maxlength="4"  />
+                    </p>
+                </td>
+                <td>
+                    <p class="dsc">hdg</p>
+                </td>
+                <td>
+                    <p class="dsc2"><input type="text" name="outKM" id="outKM" class="wdw" size="4" maxlength="4"  />
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p class="dsc">TAS</p>
+                </td>
+                <td>
+                    <p class="dsc2"><input type="numer" name="inV" id="inV" class="wdw" size="4" maxlength="4"
+                             />kt</p>
+                </td>
+                <td>
+                    <p class="dsc">gs</p>
+                </td>
+                <td>
+                    <p class="dsc2"><input type="text" name="outW" id="outW" class="wdw" size="4" maxlength="4"  />kt
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p class="dsc">distance</p>
+                </td>
+                <td>
+                    <p class="dsc2"><input type="numer" name="inS" id="inS" class="wdw" size="4" maxlength="3"
+                             /><button type="button" id="convBTN" value='true'>nm</button></p>
+                </td>
+                <td>
+                    <p class="dsc">
+                    <p></p>
+                </td>
+                <td>
+                    <p class="dsc2"><input type="numer" name="outVmin" id="outVmin" class="wdw" size="4" maxlength="4"
+                             /><code id="ConvText" class="dsc2">nm</code>/5min</p>
+                </td>
+
+
+                <td>
+                    <p class="dsc">time</p>
+                </td>
+                <td>
+                    <p class="dsc2"><input type="text" name="outT" id="outT" class="wdw" size="4" maxlength="4"
+                             />m(g):s(m)</p>
+                </td>
+            </tr>
+
+            <tr>
+    <td><button type="button" name="countBTN"  id="countBTN"  value="false" >count</button></td>         
+    <td><button type="button" name="appendBTN" id="appendBTN" value="false">append </button></td>
+
+{{!-- <td><button type="button" name="ZAPISZ"   id="ZAPISZ"   value="false"><a href="NTP.hbs/sheet" class="button">zapisz</a></button> --}}
+
+
+     <td><button type="button" name="saveBTN"   id="saveBTN"   value="false">save</button></td>
+     <td><button type="button" name="eraseBTN"   id="eraseBTN"   value="false">erase</button></td>  
+    {{!--</form> --}}
+    </tr>
+
+    </table>
+
+
+    
+
+
+       <div id="footer"><p></p></div>
+    <script type="module" src="/js/NTP.js"></script>
+</body>
+
+</html>

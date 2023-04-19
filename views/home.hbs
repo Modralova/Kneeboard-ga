@@ -1,0 +1,49 @@
+    <!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>{{title}}</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="it1">
+            <h1 id="sitename">{{title}}</h1>
+
+            <ul id="menu">
+                 <li><a href="dBase.hbs">dBase</a></li> 
+                <li><a href="NTP.hbs">wind triangle</a></li>
+                <li><a href="LOAD.hbs">load and balance</a></li>
+            </ul>
+
+
+           {{!-- <button type="button" name="signInOut" id="signInOut" value="false">login</button> --}}
+            
+             {{#if logged}}
+
+            <button type="button" name="signInOut" id="signInOut" value="false">logout</button>
+                 {{else}}
+
+           <button type="button" name="signInOut" id="signInOut" value="false">login</button>
+
+               {{/if}}
+
+ 
+
+
+        </div>
+
+
+        <div class="it5"></div>
+        <div class="it4">
+            <p></p>
+        </div>
+    </div>
+    <script type="module" src="/js/gaKneeboard.js"></script>
+</body>
+
+</html>

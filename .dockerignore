@@ -1,0 +1,7 @@
+node_modules/
+.env
+files/
+html/
+.CV.json
+.CV_pl.json
+source/CV_manager.js

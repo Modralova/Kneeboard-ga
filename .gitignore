@@ -1,0 +1,12 @@
+node_modules/
+files
+exampl
+requests.rest
+.vscode
+.env
+.modal.hbs
+.DS_Store
+DS_Store
+.CV.json
+.CV_pl.json
+source/CV_manager.js

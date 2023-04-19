@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>load and balance</title>
+</head>
+
+<body>
+    <h1>load and balance</h1>
+
+    <ul id="menu">
+
+        <li><a href='/'>{{title}}</a></li>
+
+        <li><a href="NTP.hbs">wind triangle</a></li>
+        
+
+
+    </ul>
+          
+    <table>
+
+        <tr>
+            <td>
+                <p class="dsc">SAMOLOT</p>
+            </td>
+            <td>
+                <p class="dsc2"><select name="list" size="1" id="list" class="select" size="6" maxlength="6">
+
+                    </select></p>
+            </td>
+            <td>
+                <p class="dsc">TYP</p>
+            </td>
+
+            <td>
+                <p class="dsc2"><input type="text" name="type" id="type" class="wdw2" size="10" maxlength="10" /></p>
+            </td>
+
+            <td>
+                <p class="dsc">Qmax</p>
+            </td>
+            <td>
+                <p class="kg."><input type="text" name="Qmax" id="Qmax" class="wdw_kg" size="5" maxlength="5" />
+                <button type="button" id="lbsBTN" value="false">kg</button></p>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="4">
+                <p></p>
+            </td>
+        </tr>
+
+
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <p class="dsc">Qp</p>
+            </td>
+            <td>
+                <p class="dsc"><input type="text" name="Qp" id="Qp" class="wdw_kg" size="4" maxlength="4" /><code id="ConvText" class="kg">kg</code></p>
+            </td>
+
+            <td>
+                <p class="dsc">Mp</p>
+            </td>
+            <td>
+                <p class="dsc"><input type="text" name="Mp" id="Mp" class="wdw_kgm" size="4" maxlength="4" /><code id="ConvText" class="kgm">kg/m</code></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <p class="dsc">FUEL</p>
+            </td>
+            <td>
+                <p class="dsc2"><input type="text" name="fuel" id="fuel" class="wdw2" size="" maxlength="" /><button
+                        type="button" id="flBTN" value="l.">l.</button></p>
+            </td>
+
+
+            <td>
+                <p class="dsc">Qf </p>
+            </td>
+            <td>
+                <p class="dsc"><input type="text" name="Qf" id="Qf" class="wdw_kg" size="4" maxlength="4" /><code id="ConvText" class="kg">kg</code></p>
+            </td>
+            <td>
+                <p class="dsc">Mf</p>
+            </td>
+            <td>
+                <p class="dsc"><input type="text" name="Mf" id="Mf" class="wdw_kgm" size="4" maxlength="4" /><code id="ConvText" class="kgm">kg/m</code></p>
+            </td>
+        </tr>
+
+
+
+        <tr>
+            <td></td>
+            <td></td>
+
+            <td>
+                <p class="dsc">Qcr</p>
+            </td>
+
+            <td>
+                <p class="dsc"><input type="text" name="Qcr" id="Qcr" class="wdw_kg" size="4" maxlength="4" /><code id="ConvText" class="kg">kg</code></p>
+            </td>
+            <td>
+                <p class="dsc">Mcr</p>
+            </td>
+            <td>
+                <p class="dsc"><input type="text" name="Mcr" id="Mcr" class="wdw_kgm" size="4" maxlength="4" /><code id="ConvText" class="kgm">kg/m</code></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <p> </p>
+            </td>
+            <td>
+                <p> </p>
+            </td>
+
+            <td>
+                <p class="dsc">Qlg</p>
+            </td>
+            <td>
+                <p class="dsc"><input type="text" name="Qlg" id="Qlg" class="wdw_kg" size="4" maxlength="4" /><code id="ConvText" class="kg">kg</code></p>
+            </td>
+            <td>
+                <p class="dsc">Mlg</p>
+            </td>
+            <td>
+                <p class="dsc"><input type="text" name="Mlg" id="Mlg" class="wdw_kgm" size="4" maxlength="4" /><code id="ConvText" class="kgm">kg/m</code></p>
+            </td>
+        </tr>
+
+        <tr>
+
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <p class="dsc">Q</p>
+            </td>
+            <td>
+                <p class="dsc"><input type="numer" name="Q" id="Q" class="wdw_kg" size="4" maxlength="4" /><code id="ConvText" class="kg">kg</code></p>
+            </td>
+
+
+            <td>
+                <p class="dsc">M</p>
+            </td>
+            <td>
+                <p class="dsc"><input type="text" name="M" id="M" class="wdw_kgm" size="4" maxlength="4" /><code id="ConvText" class="kgm">kg/m</code></p>
+            </td>
+        <tr>
+            <td colspan="6">
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <p class="dsc">Agc</p>
+            </td>
+            <td>
+                <p class="dsc2"><input type="numer" name="Agc" id="Agc" class="wdw2" size="6" maxlength="6" />m</p>
+            </td>
+        </tr>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <p class="dsc">Adc</p>
+            </td>
+            <td>
+                <p class="dsc2"><input type="numer" name="Adc" id="Adc" class="wdw2" size="6" maxlength="6" />%</p>
+            </td>
+        </tr>
+        </tr>
+
+        <tr>
+            <td colspan="6">
+                <p></p>
+            </td>
+        </tr>
+
+
+
+        <tr>
+            <td><button type="button" name="countBTN" id="countBTN" value="">count</button></td>
+            <td><button type="button" name="saveBTN" id="saveBTN" value="">save</button></td>
+            {{!--</form> --}}
+        </tr>
+
+    </table>
+    <div id="footer"><p></p></div>
+    <script type="module" src="/js/LOAD.js"></script>
+</body>
+
+</html>

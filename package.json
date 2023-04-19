@@ -1,0 +1,35 @@
+{
+  "name": "gobriefing",
+  "version": "1.2.0",
+  "description": "PORTAL PILOTA GA",
+  "main": "server.js",
+  
+  "author": "Jan Mędrala",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "canvas": "^2.11.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongodb-session": "^3.1.1",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-oauth2-jwt-bearer": "^1.1.0",
+    "express-session": "^1.17.3",
+    "file-system": "^1.2.2",
+    "googleapis": "^105.0.0",
+    "hbs": "^4.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.7.0",
+    "mongoose": "^6.5.0",
+    "node-fetch": "^3.2.9",
+    "nodemailer": "^6.7.8",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
